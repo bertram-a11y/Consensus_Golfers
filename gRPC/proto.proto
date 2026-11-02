@@ -1,22 +1,17 @@
-// The greeting service definition.
-
 syntax = "proto3";
 
 option go_package = "github.com/bertram-a11y/Consensus_Golfers/gRPC";
 
-service Greeter {
-  // Sends a greeting
-  rpc SayHello (HelloRequest) returns (HelloReply) {}
-  // Sends another greeting
-  rpc SayHelloAgain (HelloRequest) returns (HelloReply) {}
+service Node {
+  rpc GetNode (Request) returns (Reply) {}
 }
 
 // The request message containing the user's name.
-message HelloRequest {
+message Request {
   string name = 1;
 }
 
 // The response message containing the greetings
-message HelloReply {
+message Reply {
   string message = 1;
 }
