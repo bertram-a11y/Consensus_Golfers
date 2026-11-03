@@ -24,7 +24,8 @@ const (
 // The request message containing the user's name.
 type Request struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Name          string                 `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
+	Content       string                 `protobuf:"bytes,1,opt,name=content,proto3" json:"content,omitempty"`
+	Clock         int64                  `protobuf:"varint,2,opt,name=clock,proto3" json:"clock,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -59,17 +60,25 @@ func (*Request) Descriptor() ([]byte, []int) {
 	return file_gRPC_proto_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *Request) GetName() string {
+func (x *Request) GetContent() string {
 	if x != nil {
-		return x.Name
+		return x.Content
 	}
 	return ""
+}
+
+func (x *Request) GetClock() int64 {
+	if x != nil {
+		return x.Clock
+	}
+	return 0
 }
 
 // The response message containing the greetings
 type Reply struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Message       string                 `protobuf:"bytes,1,opt,name=message,proto3" json:"message,omitempty"`
+	Content       string                 `protobuf:"bytes,1,opt,name=content,proto3" json:"content,omitempty"`
+	Clock         int64                  `protobuf:"varint,2,opt,name=clock,proto3" json:"clock,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -104,22 +113,31 @@ func (*Reply) Descriptor() ([]byte, []int) {
 	return file_gRPC_proto_proto_rawDescGZIP(), []int{1}
 }
 
-func (x *Reply) GetMessage() string {
+func (x *Reply) GetContent() string {
 	if x != nil {
-		return x.Message
+		return x.Content
 	}
 	return ""
+}
+
+func (x *Reply) GetClock() int64 {
+	if x != nil {
+		return x.Clock
+	}
+	return 0
 }
 
 var File_gRPC_proto_proto protoreflect.FileDescriptor
 
 const file_gRPC_proto_proto_rawDesc = "" +
 	"\n" +
-	"\x10gRPC/proto.proto\"\x1d\n" +
-	"\aRequest\x12\x12\n" +
-	"\x04name\x18\x01 \x01(\tR\x04name\"!\n" +
+	"\x10gRPC/proto.proto\"9\n" +
+	"\aRequest\x12\x18\n" +
+	"\acontent\x18\x01 \x01(\tR\acontent\x12\x14\n" +
+	"\x05clock\x18\x02 \x01(\x03R\x05clock\"7\n" +
 	"\x05Reply\x12\x18\n" +
-	"\amessage\x18\x01 \x01(\tR\amessage2%\n" +
+	"\acontent\x18\x01 \x01(\tR\acontent\x12\x14\n" +
+	"\x05clock\x18\x02 \x01(\x03R\x05clock2%\n" +
 	"\x04Node\x12\x1d\n" +
 	"\aGetNode\x12\b.Request\x1a\x06.Reply\"\x00B0Z.github.com/bertram-a11y/Consensus_Golfers/gRPCb\x06proto3"
 
