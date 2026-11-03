@@ -11,8 +11,10 @@ import (
 
 type Node struct {
 	proto.unimplementedNodeServiceServer
-
 	NodeID string
+	want   bool
+	in_use bool
+	clock  int
 }
 
 func main() {
@@ -56,4 +58,8 @@ func (c *LamportClock) Tick() int64 {
 	defer c.mu.Unlock()
 	c.time++
 	return c.time
+}
+
+func request() {
+
 }

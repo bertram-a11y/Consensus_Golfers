@@ -3,6 +3,10 @@ package main
 func main() {
 	// on initialization, do
 	// state:= release
-	state := 
-	boolean :
+}
+
+type Node struct {
+	want   bool
+	in_use bool
+	clock  int
 }
