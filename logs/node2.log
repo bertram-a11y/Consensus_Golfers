@@ -1,0 +1,59 @@
+Node 2: 09:49:23.611561 listening on :5002
+Node 2: 09:49:25.340860 Requesting critical section with clock 1
+Node 2: 09:49:27.616580 Sending reply to peer 1 with clock 3
+Node 2: 09:49:32.601254 Received reply from peer with clock 3 
+Node 2: 09:49:32.892494 Received request from peer 3 with clock 4, but we are first (clock 5)
+Node 2: 09:49:40.424945 Received reply from peer with clock 8 
+Node 2: 09:49:40.424954 Entering critical section with clock 9
+Node 2: 09:49:40.925730 Leaving critical section with clock 9
+Node 2: 09:49:40.925758 Sending reply to peer 3 with clock 10
+Node 2: 09:49:42.431120 Sending reply to peer 1 with clock 12
+Node 2: 09:49:43.684838 Requesting critical section with clock 13
+Node 2: 09:49:43.685181 Received reply from peer with clock 15 
+Node 2: 09:49:43.685260 Received reply from peer with clock 16 
+Node 2: 09:49:43.685265 Entering critical section with clock 17
+Node 2: 09:49:44.186335 Leaving critical section with clock 17
+Node 2: 09:49:45.304393 Sending reply to peer 3 with clock 19
+Node 2: 09:49:45.806188 Sending reply to peer 1 with clock 21
+Node 2: 09:49:47.948092 Sending reply to peer 1 with clock 26
+Node 2: 09:49:48.136489 Requesting critical section with clock 27
+Node 2: 09:49:48.137350 Received reply from peer with clock 29 
+Node 2: 09:49:48.449443 Received reply from peer with clock 30 
+Node 2: 09:49:48.449468 Entering critical section with clock 31
+Node 2: 09:49:48.950545 Leaving critical section with clock 31
+Node 2: 09:49:49.107310 Sending reply to peer 3 with clock 33
+Node 2: 09:49:50.621299 Sending reply to peer 1 with clock 35
+Node 2: 09:49:51.340095 Sending reply to peer 3 with clock 40
+Node 2: 09:49:51.731776 Requesting critical section with clock 41
+Node 2: 09:49:51.732171 Received reply from peer with clock 43 
+Node 2: 09:49:51.841339 Received reply from peer with clock 44 
+Node 2: 09:49:51.841344 Entering critical section with clock 45
+Node 2: 09:49:52.342389 Leaving critical section with clock 45
+Node 2: 09:49:53.809444 Requesting critical section with clock 46
+Node 2: 09:49:53.809793 Received reply from peer with clock 48 
+Node 2: 09:49:53.809797 Received reply from peer with clock 48 
+Node 2: 09:49:53.809801 Entering critical section with clock 50
+Node 2: 09:49:54.100373 Received request from peer 1 with clock 49, but we are first (clock 51)
+Node 2: 09:49:54.310589 Leaving critical section with clock 50
+Node 2: 09:49:54.310643 Sending reply to peer 1 with clock 52
+Node 2: 09:49:55.837535 Sending reply to peer 3 with clock 54
+Node 2: 09:49:56.340848 Sending reply to peer 1 with clock 58
+Node 2: 09:49:57.105690 Requesting critical section with clock 59
+Node 2: 09:49:57.106006 Received reply from peer with clock 61 
+Node 2: 09:49:57.106010 Received reply from peer with clock 62 
+Node 2: 09:49:57.106013 Entering critical section with clock 63
+Node 2: 09:49:57.607108 Leaving critical section with clock 63
+Node 2: 09:49:59.051369 Sending reply to peer 1 with clock 65
+Node 2: 09:49:59.932192 Requesting critical section with clock 66
+Node 2: 09:49:59.932497 Received reply from peer with clock 68 
+Node 2: 09:49:59.932555 Received reply from peer with clock 69 
+Node 2: 09:49:59.932569 Entering critical section with clock 70
+Node 2: 09:49:59.998084 Received request from peer 3 with clock 69, but we are first (clock 71)
+Node 2: 09:50:00.433466 Leaving critical section with clock 70
+Node 2: 09:50:00.433498 Sending reply to peer 3 with clock 72
+Node 2: 09:50:00.577189 Sending reply to peer 1 with clock 74
+Node 2: 09:50:02.246648 Sending reply to peer 3 with clock 78
+Node 2: 09:50:02.876546 Requesting critical section with clock 79
+Node 2: 09:50:02.876858 Received reply from peer with clock 82 
+Node 2: 09:50:02.876944 Received reply from peer with clock 81 
+Node 2: 09:50:02.876951 Entering critical section with clock 84
