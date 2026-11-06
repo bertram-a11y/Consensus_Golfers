@@ -59,7 +59,7 @@ func main() {
 			continue
 		}
 		conn, err := grpc.Dial(fmt.Sprintf("localhost:%d", port), grpc.WithInsecure())
-		if err != nil { // FIX: err skal bruges
+		if err != nil { 
 			log.Fatalf("failed to connect to %d: %v", port, err)
 		}
 		node.peers = append(node.peers, proto.NewNodeClient(conn)) 
@@ -80,7 +80,7 @@ func (n *Node) enter() {
 	n.released = make(chan struct{})
 	req := &proto.Request{Content: strconv.FormatInt(n.id, 10), Clock: n.reqClock}
 	n.mu.Unlock()
-	log.Printf("Stik mig critical section with clock %d", req.Clock) // FIX: req.Clock
+	log.Printf("Requesting critical section with clock %d", req.Clock) 
 
 	var wg sync.WaitGroup
 	for _, peer := range n.peers {
@@ -107,7 +107,7 @@ func (n *Node) enter() {
 	n.mu.Unlock() 
 
 	log.Printf("Entering critical section with clock %d", clock)
-	time.Sleep(500 * time.Millisecond) // Simulate critical section
+	time.Sleep(500 * time.Millisecond) 
 	log.Printf("Leaving critical section with clock %d", clock)
 
 	n.mu.Lock()
